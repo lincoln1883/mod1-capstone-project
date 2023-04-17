@@ -1,3 +1,60 @@
-h1{
-	text-align: center;
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+:root {
+    --ff-primary: 'Lato', sans-serif;
+    --ff-secondary: 'cocogoose', monospace;
+    
+    --fw-reg: 300;
+    --fw-bold: 900;
+    
+    --clr-light: #eaeaea;
+    --clr-dark: #272a31;
+    --clr-accent: #ec5242;
+
+    --fs-h1: 3rem;
+    --fs-h2: 2.25rem;
+    --fs-h3: 1.25rem;
+    --fs-body: 1rem;
+    
+    --bs: 0.25em 0.25em 0.75em rgba(0,0,0,.25),
+          0.125em 0.125em 0.25em rgba(0,0,0,.15);
+}
+
+@font-face{
+    font-family: 'Lato', sans-serif;
+    src: url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: var(--ff-primary);
+    line-height: 1.6;
+}
+
+.main-intro {
+	 background: var(--clr-light) url('./assets/logos/logo-30anniv-2c-uai-516x470.png') no-repeat top;
+	 height: 200px;
+	 background-blend-mode: overlay;
+}
+
+.hamburger-image {
+	width: 40px;
+}
+
+.nav-toggle {
+	position: absolute;
+	top: 20px;
+	left: 20px;
+}
+
+.page-heading .nav {
+	display: none;
+}
+
+.intro {
 }
