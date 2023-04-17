@@ -14,6 +14,7 @@
     --clr-light: #eaeaea;
     --clr-dark: #272a31;
     --clr-accent: #ec5242;
+    --clr-light2:#eaeaeac2;
 
     --fs-h1: 3rem;
     --fs-h2: 2.25rem;
@@ -36,25 +37,102 @@ body{
     line-height: 1.6;
 }
 
+.nav-toggle {
+    font-size: 1.5rem;
+    color: var(--clr-dark);
+    width: 100vw;
+    background: var(--clr-light);
+    padding: 1rem 1.25rem;
+}
+
+.fa-regular {
+	font-weight: var(--fw-bold);
+	color: var(--clr-dark);
+}
+
+.main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
 .main-intro {
 	 background: var(--clr-light) url('./assets/logos/logo-30anniv-2c-uai-516x470.png') no-repeat top;
-	 height: 200px;
+	 height: 100%;
 	 background-blend-mode: overlay;
+	 padding: 30px;
 }
 
-.hamburger-image {
-	width: 40px;
+.intro-greeting,
+.intro-title {
+	color: var(--clr-accent);
 }
 
-.nav-toggle {
-	position: absolute;
-	top: 20px;
-	left: 20px;
+.intro-title {
+	font-weight: var(--fw-bold);
+	font-size: var(--fs-h1);
+	line-height: normal;
 }
 
+.intro-description{
+	border:  3px solid white;
+	background-color: var(--clr-light2);
+}
+
+.main-events {
+	background: var(--clr-dark) url('./assets/hitmar-resized.png');
+	color: var(--clr-light);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	padding: 2rem 1rem;
+	gap: 10px;
+}
+
+.events-cards{
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.events-card{
+    display: grid;
+    grid-template-columns: 1fr 2fr 3fr;
+    align-items: center;
+    padding: 0.5rem;
+    background-color: rgba(120, 121, 133, 0.199);
+    gap: 0.5rem;
+}
+
+.more-info {
+	color: var(--clr-light);
+	background-color: var(--clr-accent);
+  border-radius: 0.25rem;
+  text-decoration: none;
+  text-align: center;
+  padding: 1rem;
+  width: 250px;
+  margin-top: 20px;
+}
+
+.events-icon {
+	width: 5rem;
+}
+
+.events-title {
+	margin-bottom: 0;
+}
+
+.events__card-title{
+	color: var(--clr-accent);
+	text-align: center;
+}
+
+hr{
+	width: 15%;
+	border: 1px solid var(--clr-accent);
+}
 .page-heading .nav {
 	display: none;
-}
-
-.intro {
 }
