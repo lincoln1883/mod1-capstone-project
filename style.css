@@ -224,7 +224,7 @@ hr {
 }
 
 .sponsors-item img {
-  width: 10rem;
+  width: 8rem;
   height: 5rem;
   mix-blend-mode: overlay;
 }
@@ -356,14 +356,17 @@ h2.details-title {
 }
 
 @media (max-width:767px){
-	.nav {
+	.nav,
+	.program{
 	  display: none;
 	}
 }
 
 
 @media (min-width: 768px){
-	.nav-toggle {
+	.nav-toggle,
+	.more-info,
+	.more{
 		display: none;
 	}
 
@@ -410,6 +413,7 @@ h2.details-title {
 		flex-direction: row;
 		justify-content: center;
 		flex-wrap: wrap;
+		margin: 30px 0;
 	}
 
 	.events-card{
@@ -420,5 +424,22 @@ h2.details-title {
 
 	.events-card > *{
 		margin: 0;
+	}
+
+	.featured-artist-container {
+	 grid-template-columns: 1fr 1fr;
+	}
+	
+	.program{
+		color: var(--clr-light2);
+		margin: 20px 0;
+	}
+
+	.sponsors-list{
+		margin: 40px 0;
+	}
+
+	footer {
+		margin: 20px;
 	}
 }
