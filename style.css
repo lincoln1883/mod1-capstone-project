@@ -400,4 +400,9 @@ h2.details-title {
     text-decoration: none;
     color: var(--clr-accent);
 	}
+
+	.intro-container{
+		width: 70%;
+		margin: 0 auto;
+	}
 }
