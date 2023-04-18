@@ -248,3 +248,49 @@ footer p{
 .page-heading .nav {
 	display: none;
 }
+
+/* about page styles */
+
+.main-intro.about {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.intro-title.about{
+	margin: 10px 0;
+}
+
+.intro-greeting.about{
+	font-size: 1.5rem;
+}
+
+.intro-description.about{
+	background-color: white;
+}
+
+.main-intro.about p strong{
+	text-decoration: underline;
+}
+
+.main-details {
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 2rem 1rem;
+	gap: 10px;
+}
+
+p.description{
+	width: 80%;
+}
+
+.main-details img{
+	  width: 100%;
+    border: 2px solid var(--clr-light);
+    margin-top: 3rem;
+}
