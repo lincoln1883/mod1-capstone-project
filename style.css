@@ -405,4 +405,20 @@ h2.details-title {
 		width: 70%;
 		margin: 0 auto;
 	}
+
+	.events-cards{
+		flex-direction: row;
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+
+	.events-card{
+		display: flex;
+		flex-direction: column;
+		align-items: center; 
+		width: 12rem;	}
+
+	.events-card > *{
+		margin: 0;
+	}
 }
