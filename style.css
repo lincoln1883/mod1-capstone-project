@@ -38,13 +38,13 @@ body {
   font-size: 1.5rem;
   color: var(--clr-dark);
   width: 100vw;
-  background: var(--clr-light);
   padding: 1rem 1.25rem;
 }
 
-.fa-regular {
+i.fa-regular.fa-bars {
   font-weight: var(--fw-bold);
   color: var(--clr-dark);
+  font-size: 2.5rem;
 }
 
 .main {
@@ -247,7 +247,7 @@ footer p {
   opacity: 0.5;
 }
 
-.page-heading .nav {
+.nav {
   display: none;
 }
 
