@@ -8,7 +8,33 @@
 </head>
 <body>
 		<header class="page-heading">
+		 <div class="nav-top">
+			<ul class="social__list">
+				<li class="social__item">
+					<a href="#" class="social__link">
+						<i class="fa-brands fa-facebook"></i></a>
+					</li>
+				<li class="social__item">
+					<a href="#" class="social__link">
+						<i class="fa-brands fa-twitter" style="color: #e4e5e7;"></i></a>
+					</li>
+				<li class="social__item">
+					<a href="#" class="social__link">English</a>
+				</li>
+				<li class="social__item">
+					<a href="#" class="social__link">My Page</a>
+				</li>
+				<li class="social__item">
+					<a href="#" class="social__link">Logout</a></li>
+			</ul>
+		</div>
+		<a href="#" class="nav-toggle" type="button" aria-label="toggle navigation">
+				<i class="fa-regular fa-bars"></i>
+		</a>	
 		<nav class="nav">
+			<div class="nav__logo">
+				<img class="logo" src="./assets/logos/logo-nav.png" alt="">
+			</div>
 			<ul class="nav__list">
 				<li class="nav__item">
 					<a href="" class="nav__link">About</a>
@@ -25,18 +51,18 @@
 				<li class="nav__item">
 					<a href="" class="nav__link">History</a>
 				</li>
+				<a href="" class="nav__button">RS Bookings</a>
 			</ul>
 		</nav>
 	</header>
 	<main class="main">
-		<a href="#" class="nav-toggle" type="button" aria-label="toggle navigation">
-				<i class="fa-regular fa-bars"></i>
-		</a>
 		<section class="main-intro about">
+			<div class="intro-container">
 			<span class="intro-greeting about">"Hello! Music world"</span>
 			<h1 class="intro-title about">REGGAE SUMFEST THE 30TH STAGING 2023</h1>
 			<p class="intro-description about">We are once again pleased to bring to you the 30th staging of the greatest reggae show on earth featuring over 30 artist. Add som e more text to increase the size of the container.</p>
 			<p>Please contact us by Email for further information about Reggae Sumfest 2023!<br><strong>reggaesumfest@rsfjamaica.org</strong></p>
+		</div>
 		</section>
 		<section class="main-details">
 			<h2 class="details-title">Reggae Sumfest 2023 Logo</h2>
@@ -59,7 +85,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="main-sponsors">
+		<section class="main-sponsors about">
 			<h2 class="sponsors-title">Sponsors</h2>
 			<hr>
 			<ul class="sponsors-list">
@@ -78,7 +104,7 @@
 				</ul>
 			</section>
 	</main>
-	<footer>
+	<footer class="about">
 		<img class="footer-logo" src="./assets/logos/logo-nav.png" alt="">
 		<p class="footer-info">&copy; 2023 Copyright Down Sound Entertainment</p>
 	</footer>
