@@ -241,14 +241,15 @@ footer p {
   text-align: center;
 }
 
-.footer-logo {
+.footer-logo,
+.logo {
   width: 5rem;
   padding: 0 5px;
-  opacity: 0.5;
+  
 }
 
-.nav {
-  display: none;
+.footer-logo {
+	opacity: 0.5;
 }
 
 /* about page styles */
@@ -352,4 +353,51 @@ h2.details-title {
 
 .history-text {
   margin: 0;
+}
+
+@media (max-width:767px){
+	.nav {
+	  display: none;
+	}
+}
+
+
+@media (min-width: 768px){
+	.nav-toggle {
+		display: none;
+	}
+
+	header {
+		margin: 0 70px;
+	}
+
+	.nav {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	.nav__list {
+		display: flex;
+		gap: 10px;
+		padding: 0;
+		list-style: none;
+		cursor: pointer;
+	}
+
+	.nav__item > *{
+		text-decoration: none;
+		color: var(--clr-dark);
+	}
+
+	.active{
+		color: var(--clr-accent);
+	}
+
+	a.nav__button{
+		border: 3px solid var(--clr-accent);
+    padding: 0 5px;
+    text-decoration: none;
+    color: var(--clr-accent);
+	}
 }
