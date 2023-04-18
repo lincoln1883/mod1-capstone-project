@@ -1,121 +1,116 @@
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 :root {
-    --ff-primary: 'Lato', sans-serif;
-    --ff-secondary: 'cocogoose', monospace;
-    
-    --fw-reg: 300;
-    --fw-bold: 900;
-    
-    --clr-light: #eaeaea;
-    --clr-dark: #272a31;
-    --clr-accent: #ec5242;
-    --clr-light2:#eaeaeac2;
-
-    --fs-h1: 3rem;
-    --fs-h2: 2.25rem;
-    --fs-h3: 1.25rem;
-    --fs-body: 1rem;
-    
-    --bs: 0.25em 0.25em 0.75em rgba(0,0,0,.25),
-          0.125em 0.125em 0.25em rgba(0,0,0,.15);
+  --ff-primary: 'Lato', sans-serif;
+  --ff-secondary: 'cocogoose', monospace;
+  --fw-reg: 300;
+  --fw-bold: 900;
+  --clr-light: #eaeaea;
+  --clr-dark: #272a31;
+  --clr-accent: #ec5242;
+  --clr-light2: #eaeaeac2;
+  --fs-h1: 3rem;
+  --fs-h2: 2.25rem;
+  --fs-h3: 1.25rem;
+  --fs-body: 1rem;
+  --bs:
+    0.25em 0.25em 0.75em rgba(0, 0, 0, 0.25),
+    0.125em 0.125em 0.25em rgba(0, 0, 0, 0.15);
 }
 
-@font-face{
-    font-family: 'Lato', sans-serif;
-    src: url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+@font-face {
+  font-family: 'Lato', sans-serif;
+  src: url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
 }
 
-body{
-    margin: 0;
-    padding: 0;
-    font-family: var(--ff-primary);
-    line-height: 1.6;
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--ff-primary);
+  line-height: 1.6;
 }
 
 .nav-toggle {
-    font-size: 1.5rem;
-    color: var(--clr-dark);
-    width: 100vw;
-    background: var(--clr-light);
-    padding: 1rem 1.25rem;
+  font-size: 1.5rem;
+  color: var(--clr-dark);
+  width: 100vw;
+  background: var(--clr-light);
+  padding: 1rem 1.25rem;
 }
 
 .fa-regular {
-	font-weight: var(--fw-bold);
-	color: var(--clr-dark);
+  font-weight: var(--fw-bold);
+  color: var(--clr-dark);
 }
 
 .main {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .main-intro {
-	 background: var(--clr-light) url('./assets/logos/logo-30anniv-2c-uai-516x470.png') no-repeat top;
-	 height: 100%;
-	 width: 100%;
-	 background-blend-mode: overlay;
-	 padding: 30px 10px;
+  background: var(--clr-light) url('./assets/logos/logo-30anniv-2c-uai-516x470.png') no-repeat top;
+  height: 100%;
+  width: 100%;
+  background-blend-mode: overlay;
+  padding: 30px 10px;
 }
 
 .intro-greeting,
 .intro-title {
-	color: var(--clr-accent);
+  color: var(--clr-accent);
 }
 
-.intro-title{
-	margin: 0;
-}
-.intro-greeting{
-	font-size: 1.5rem;
+.intro-greeting {
+  font-size: 1.5rem;
 }
 
 .intro-title {
-	font-weight: var(--fw-bold);
-	font-size: var(--fs-h1);
-	line-height: normal;
+  font-weight: var(--fw-bold);
+  font-size: var(--fs-h1);
+  line-height: normal;
+  margin: 0;
 }
 
-.intro-description{
-	border:  3px solid white;
-	background-color: var(--clr-light2);
+.intro-description {
+  border: 3px solid white;
+  background-color: var(--clr-light2);
 }
 
 .main-events {
-	background: var(--clr-dark) url('./assets/hitmar-resized.png');
-	color: var(--clr-light);
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	width: 100%;
-	padding: 2rem 1rem;
-	gap: 10px;
+  background: var(--clr-dark) url('./assets/hitmar-resized.png');
+  color: var(--clr-light);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 2rem 1rem;
+  gap: 10px;
 }
 
-.events-cards{
-	display: flex;
-	flex-direction: column;
-	gap: 10px;
+.events-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
-.events-card{
-    display: grid;
-    grid-template-columns: 1fr 2fr 3fr;
-    align-items: center;
-    padding: 0.5rem;
-    background-color: rgba(120, 121, 133, 0.199);
-    gap: 0.5rem;
+.events-card {
+  display: grid;
+  grid-template-columns: 1fr 2fr 3fr;
+  align-items: center;
+  padding: 0.5rem;
+  background-color: rgba(120, 121, 133, 0.199);
+  gap: 0.5rem;
 }
 
 .more-info {
-	color: var(--clr-light);
-	background-color: var(--clr-accent);
+  color: var(--clr-light);
+  background-color: var(--clr-accent);
   border-radius: 0.25rem;
   text-decoration: none;
   text-align: center;
@@ -125,205 +120,205 @@ body{
 }
 
 .events-icon {
-	width: 5rem;
+  width: 5rem;
 }
 
 .events-title,
-.featured-title{
-	margin-bottom: 0;
+.featured-title {
+  margin-bottom: 0;
 }
 
-.events__card-title{
-	color: var(--clr-accent);
-	text-align: center;
+.events__card-title {
+  color: var(--clr-accent);
+  text-align: center;
 }
 
-hr{
-	width: 15%;
-	border: 1px solid var(--clr-accent);
+hr {
+  width: 15%;
+  border: 1px solid var(--clr-accent);
 }
 
 .featured-artist {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	gap: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
   width: 100%;
   padding: 2rem 1rem;
 }
 
-.featured-artist-container{
-	display: grid;
+.featured-artist-container {
+  display: grid;
   margin: 2rem 0;
   gap: 3rem;
 }
 
-.featured-card{
-	display: flex;
-	align-items: center;
-	gap: 1rem;
+.featured-card {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
 
 .featured-image {
-	width: 8rem;
-	height: 8rem;
+  width: 8rem;
+  height: 8rem;
 }
 
-.featured-text-info{
-	display: flex;
-	flex-direction: column;
+.featured-text-info {
+  display: flex;
+  flex-direction: column;
 }
 
 .featured-text-info > * {
-	margin: 2px 0;
+  margin: 2px 0;
 }
 
-.feature-card__category{
-	color: var(--clr-accent);
-    font-weight: 600;
-    font-size: 1rem;
-    font-style: italic;
+.feature-card__category {
+  color: var(--clr-accent);
+  font-weight: 600;
+  font-size: 1rem;
+  font-style: italic;
 }
 
-.featured-description{
-	font-size: 0.9rem;
+.featured-description {
+  font-size: 0.9rem;
 }
 
-.card-hr{
-	border: 1px solid var(--clr-light);
+.card-hr {
+  border: 1px solid var(--clr-light);
 }
 
 .more {
-	  color: var(--clr-dark);
-	  border: 1px solid var(--clr-dark);
-	  border-radius: 3px;
-    text-decoration: none;
-    text-align: center;
-    padding: 1rem;
-    width: 300px;
-    margin-top: 20px;
+  color: var(--clr-dark);
+  border: 1px solid var(--clr-dark);
+  border-radius: 3px;
+  text-decoration: none;
+  text-align: center;
+  padding: 1rem;
+  width: 300px;
+  margin-top: 20px;
 }
 
-.more .fa-angle-down{
-	color: var(--clr-accent);
+.more .fa-angle-down {
+  color: var(--clr-accent);
 }
 
 .main-sponsors {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	width: 100%;
-	background-color: var(--clr-dark);
-	color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background-color: var(--clr-dark);
+  color: white;
 }
 
 .sponsors-list {
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
-	flex-wrap: wrap;
-	list-style: none;
-	gap: 10px;
-	padding: 0 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  list-style: none;
+  gap: 10px;
+  padding: 0 20px;
 }
 
-.sponsors-item img{
-	width: 10rem;
-	height: 5rem;
-	mix-blend-mode: overlay;
+.sponsors-item img {
+  width: 10rem;
+  height: 5rem;
+  mix-blend-mode: overlay;
 }
 
-footer{
-	padding: 10px 20px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	gap: 10px;
+footer {
+  padding: 10px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 }
 
-footer p{
-	text-align: center;
+footer p {
+  text-align: center;
 }
 
 .footer-logo {
-	width: 5rem;
-	padding: 0 5px;
-	opacity: 0.5;
+  width: 5rem;
+  padding: 0 5px;
+  opacity: 0.5;
 }
 
 .page-heading .nav {
-	display: none;
+  display: none;
 }
 
 /* about page styles */
 
 .main-intro.about {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
-.intro-title.about{
-	margin: 10px 0;
+.intro-title.about {
+  margin: 10px 0;
 }
 
-.intro-greeting.about{
-	font-size: 1.5rem;
+.intro-greeting.about {
+  font-size: 1.5rem;
 }
 
-.intro-description.about{
-	background-color: white;
+.intro-description.about {
+  background-color: white;
 }
 
-.main-intro.about p strong{
-	text-decoration: underline;
+.main-intro.about p strong {
+  text-decoration: underline;
 }
 
 .main-details {
-	text-align: center;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	padding: 2rem 1rem;
-	gap: 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 1rem;
+  gap: 10px;
 }
 
-p.description{
-	width: 80%;
+p.description {
+  width: 80%;
 }
 
-.main-details img{
-	  width: 100%;
-    border: 2px solid var(--clr-light);
-    margin-top: 3rem;
+.main-details img {
+  width: 100%;
+  border: 2px solid var(--clr-light);
+  margin-top: 3rem;
 }
 
-h2.details-title{
-	margin: 5px 0;
+h2.details-title {
+  margin: 5px 0;
 }
 
-.main-history{
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	text-align: center;
+.main-history {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
-.history-image-container{
-	display: flex;
+.history-image-container {
+  display: flex;
   flex-direction: column;
   align-items: center;
   gap: 20px;
   margin: 2rem 0;
 }
 
-.history-card{
-	display: flex;
+.history-card {
+  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -336,25 +331,25 @@ h2.details-title{
   background-blend-mode: multiply;
 }
 
-.image1{
-	background-image: url('./assets/images/sumfest1.jpg');
-	background-size: cover;
-	width: 18rem;
-	height: 10rem;
+.image1 {
+  background-image: url('./assets/images/sumfest1.jpg');
+  background-size: cover;
+  width: 18rem;
+  height: 10rem;
 }
 
-.image2{
-	background-image: url('./assets/images/reggaesumfest22.jpeg');
-	background-size: cover;
-	width: 18rem;
-	height: 10rem;
+.image2 {
+  background-image: url('./assets/images/reggaesumfest22.jpeg');
+  background-size: cover;
+  width: 18rem;
+  height: 10rem;
 }
 
-.history-heading{
-	font-size: 2.5rem;
-	margin: 0;
+.history-heading {
+  font-size: 2.5rem;
+  margin: 0;
 }
 
-.history-text{
-	margin: 0;
+.history-text {
+  margin: 0;
 }
