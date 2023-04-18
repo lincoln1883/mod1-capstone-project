@@ -59,8 +59,9 @@ body{
 .main-intro {
 	 background: var(--clr-light) url('./assets/logos/logo-30anniv-2c-uai-516x470.png') no-repeat top;
 	 height: 100%;
+	 width: 100%;
 	 background-blend-mode: overlay;
-	 padding: 30px;
+	 padding: 30px 10px;
 }
 
 .intro-greeting,
@@ -120,7 +121,8 @@ body{
 	width: 5rem;
 }
 
-.events-title {
+.events-title,
+.featured-title{
 	margin-bottom: 0;
 }
 
@@ -132,6 +134,96 @@ body{
 hr{
 	width: 15%;
 	border: 1px solid var(--clr-accent);
+}
+
+.featured-artist {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 10px;
+  width: 100%;
+  padding: 2rem 1rem;
+}
+
+.featured-artist-container{
+	display: grid;
+  margin: 2rem 0;
+  gap: 3rem;
+}
+
+.featured-card{
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+}
+
+.featured-image {
+	width: 8rem;
+	height: 8rem;
+}
+
+.featured-text-info{
+	display: flex;
+	flex-direction: column;
+}
+
+.featured-text-info > * {
+	margin: 2px 0;
+}
+
+.feature-card__category{
+	color: var(--clr-accent);
+    font-weight: 600;
+    font-size: 1rem;
+    font-style: italic;
+}
+
+.featured-description{
+	font-size: 0.9rem;
+}
+
+.card-hr{
+	border: 1px solid var(--clr-light);
+}
+
+.more {
+	  color: var(--clr-dark);
+	  border: 1px solid var(--clr-dark);
+	  border-radius: 3px;
+    text-decoration: none;
+    text-align: center;
+    padding: 1rem;
+    width: 300px;
+    margin-top: 20px;
+}
+
+.more .fa-angle-down{
+	color: var(--clr-accent);
+}
+
+.main-sponsors {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	background-color: var(--clr-dark);
+	color: white;
+}
+
+.sponsors-list {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	list-style: none;
+	gap: 10px;
+}
+
+.sponsors-item img{
+	width: 10rem;
+	height: 5rem;
+	mix-blend-mode: overlay;
 }
 .page-heading .nav {
 	display: none;
