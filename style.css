@@ -69,6 +69,13 @@ body{
 	color: var(--clr-accent);
 }
 
+.intro-title{
+	margin: 0;
+}
+.intro-greeting{
+	font-size: 1.5rem;
+}
+
 .intro-title {
 	font-weight: var(--fw-bold);
 	font-size: var(--fs-h1);
@@ -293,4 +300,61 @@ p.description{
 	  width: 100%;
     border: 2px solid var(--clr-light);
     margin-top: 3rem;
+}
+
+h2.details-title{
+	margin: 5px 0;
+}
+
+.main-history{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.history-image-container{
+	display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  margin: 2rem 0;
+}
+
+.history-card{
+	display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  width: 24rem;
+  height: 13.5rem;
+  color: #fff;
+  background-color: var(--clr-accent);
+  background-blend-mode: multiply;
+}
+
+.image1{
+	background-image: url('./assets/images/sumfest1.jpg');
+	background-size: cover;
+	width: 18rem;
+	height: 10rem;
+}
+
+.image2{
+	background-image: url('./assets/images/reggaesumfest22.jpeg');
+	background-size: cover;
+	width: 18rem;
+	height: 10rem;
+}
+
+.history-heading{
+	font-size: 2.5rem;
+	margin: 0;
+}
+
+.history-text{
+	margin: 0;
 }
