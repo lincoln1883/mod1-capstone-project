@@ -90,7 +90,7 @@ for (let i = 0; i < artists.length; i += 1) {
 
   const artistBio = document.createElement('p');
   artistBio.classList.add('featured-description');
-  artistBio.innerHTML = artist.biography.slice(20, -1);
+  artistBio.innerHTML = artist.biography;
 
   textContainer.append(artistName, musicCategory, horizontalLine, artistBio);
   card.append(artistImage, textContainer);
