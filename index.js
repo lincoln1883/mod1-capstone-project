@@ -1,4 +1,3 @@
-
 const mobileMenu = document.querySelector('.nav');
 const navLinks = document.querySelectorAll('.nav__link');
 const openMenu = document.querySelector('#menu-open');
