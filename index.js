@@ -29,19 +29,19 @@ const artists = [
     image: './assets/images/kanye-west.jpeg',
     name: 'Kanye West',
     category: 'Rapper',
-    biography: 'Kanye West, legal name Ye, (born June 8, 1977, Atlanta, Georgia, U.S.), American producer, rapper, and fashion designer who parlayed his production success in the late 1990s and early 2000s into a career as a popular, critically acclaimed solo artist.',
+    biography: 'Kanye West, legal name Ye, (born June 8, 1977, Atlanta, Georgia, U.S.), American producer, rapper, and fashion designer who parlayed his production success in the late 1990s and early 2000s.',
   },
   {
     image: './assets/images/nicki-mahnaj.jpeg',
     name: 'Nicki Minaj',
     category: 'Hip Hop',
-    biography: 'Nicki Minaj was born Onika Tanya Maraj on December 8, 1982 in St. James, Port of Spain, Trinidad & Tobago and raised in Queens, New York City, New York. She grew up in a troubled family with a father that was a drug addict who later changed after he checked into rehab and started going to church.',
+    biography: 'Nicki Minaj was born Onika Tanya Maraj on December 8, 1982 in St. James, Port of Spain, Trinidad & Tobago and raised in Queens, New York City, New York.',
   },
   {
     image: './assets/images/taurus-riley.jpeg',
     name: 'Tarrus Riley',
     category: 'Reggae',
-    biography: 'Riley was born in Bronx, New York, and raised in Jamaica. His father Jimmy Riley was a veteran reggae singer. Tarrus made his recording debut as a teenager. In 2004, he released his debut album, Challenges.',
+    biography: 'Riley was born in Bronx, New York, and raised in Jamaica. His father Jimmy Riley was a veteran reggae singer. Tarrus made his recording debut as a teenager.',
   },
   {
     image: './assets/images/valiant.jpg',
@@ -59,7 +59,7 @@ const artists = [
     image: './assets/images/Beres18.jpg',
     name: 'Beres Hammond',
     category: 'Reggae',
-    biography: "Born the ninth of ten children, Hammond grew up listening to his father's collection of American soul and jazz music including Sam Cooke and Otis Redding. He was further influenced by the native music of ska and rocksteady, in particular Alton Ellis.",
+    biography: "Born the ninth of ten children, Hammond grew up listening to his father's collection of American soul and jazz music including Sam Cooke and Otis Redding.",
   },
 ];
 
@@ -90,9 +90,27 @@ for (let i = 0; i < artists.length; i += 1) {
 
   const artistBio = document.createElement('p');
   artistBio.classList.add('featured-description');
-  artistBio.innerHTML = artist.biography;
+  artistBio.innerHTML = artist.biography.slice(20, -1);
 
   textContainer.append(artistName, musicCategory, horizontalLine, artistBio);
   card.append(artistImage, textContainer);
   featureCards.appendChild(card);
 }
+
+const showMore = document.getElementById('show-more');
+const cards = featureCards.querySelectorAll('.featured-card');
+
+const mediaQuery = window.matchMedia('(max-width: 768px)');
+
+if (mediaQuery.matches) {
+  for (let i = 2; i < cards.length; i += 1) {
+    cards[i].classList.add('hidden');
+  }
+}
+
+showMore.addEventListener('click', () => {
+  for (let i = 2; i < cards.length; i += 1) {
+    cards[i].classList.toggle('hidden');
+  }
+  showMore.classList.add('hidden');
+});

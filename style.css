@@ -391,6 +391,10 @@ i.fa-solid.fa-chevron-down {
   margin: 0;
 }
 
+.hidden {
+  display: none;
+}
+
 @media (max-width: 767px) {
   .nav,
   .nav__logo,
