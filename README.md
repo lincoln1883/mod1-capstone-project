@@ -80,7 +80,7 @@ This is my first Capstone project that designed to highlight the topics learned,
 
 
 ## 🚀 Video Presentation <a name="video-presentation"></a>
-- [Video Presentation](https://www.loom.com/share/59480bb95ab344d19bee283cd3fee8a4)
+- [Video Presentation](https://www.loom.com/share/0bb71be5254b4a3e99b91311e152f655)
 
 <!-- GETTING STARTED -->
 
