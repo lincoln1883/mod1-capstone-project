@@ -128,6 +128,10 @@ body {
   gap: 0.5rem;
 }
 
+.events-card:hover{
+  border: 2px solid white;
+}
+
 .more-info {
   color: var(--clr-light);
   background-color: var(--clr-accent);
@@ -164,7 +168,7 @@ hr {
   align-items: center;
   gap: 10px;
   width: 100%;
-  padding: 2rem 1rem;
+  padding: 2rem 1.5rem;
 }
 
 .featured-artist-container {
@@ -190,7 +194,7 @@ hr {
 }
 
 .featured-text-info > * {
-  margin: 2px 0;
+  margin: 0;
 }
 
 .feature-card__category {
@@ -201,7 +205,7 @@ hr {
 }
 
 .featured-description {
-  font-size: 0.9rem;
+  font-size: 0.75rem;
 }
 
 .card-hr {
@@ -247,6 +251,7 @@ hr {
   width: 8rem;
   height: 5rem;
   mix-blend-mode: overlay;
+  filter: grayscale(100%) contrast(30%);
 }
 
 footer {
@@ -395,7 +400,7 @@ i.fa-solid.fa-chevron-down {
   display: none;
 }
 
-@media (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .nav,
   .nav__logo,
   .nav-top,
@@ -456,9 +461,13 @@ i.fa-solid.fa-chevron-down {
     font-size: 2rem;
     margin-right: 90%;
   }
+
+  .featured-description{
+    font-size: 0.75rem;
+  }
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   #menu-open,
   .nav-toggle,
   .more-info,
@@ -534,6 +543,10 @@ i.fa-solid.fa-chevron-down {
     margin: 0;
   }
 
+  .featured-artist {
+    padding: 3rem 9rem;
+  }
+
   .history-image-container {
     flex-direction: row;
   }
@@ -551,10 +564,12 @@ i.fa-solid.fa-chevron-down {
   }
 
   .events-card {
+    text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 12rem;
+    padding: 1rem 0.5rem;
   }
 
   .events-card > * {
@@ -562,7 +577,10 @@ i.fa-solid.fa-chevron-down {
   }
 
   .featured-artist-container {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+/*    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));*/
+    grid-gap: 10px;
   }
 
   .program {
