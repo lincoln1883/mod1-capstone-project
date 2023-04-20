@@ -128,7 +128,7 @@ body {
   gap: 0.5rem;
 }
 
-.events-card:hover{
+.events-card:hover {
   border: 2px solid white;
 }
 
@@ -462,7 +462,7 @@ i.fa-solid.fa-chevron-down {
     margin-right: 90%;
   }
 
-  .featured-description{
+  .featured-description {
     font-size: 0.75rem;
   }
 }
