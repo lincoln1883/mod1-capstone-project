@@ -51,7 +51,7 @@ const artists = [
   },
   {
     image: './assets/images/kabakapyramid.jpg',
-    name: 'Kabaka Pyramod',
+    name: 'Kabaka Pyramid',
     category: 'Reggae',
     biography: 'Keron Salmon, known by his fans as Kabaka Pyramid, is an ever-evolving artist that has numerous ways of expressing his creativity.',
   },
